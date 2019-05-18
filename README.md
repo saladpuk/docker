@@ -60,7 +60,9 @@ docker run -d -p 80:80 --name phpapp php-img
 จากขั้นตอนที่ (4) คำที่สอง: เป็นการนำ Image ไปสร้างเป็น **Container** จาก Image ที่ชื่อว่า php-img และทำการ map port 80 ในเครื่องให้ตรงกับ port 80 ของ container (ทำให้เราสามารถเข้าไปใช้งาน webserver ผ่าน port 80 ใน web browser ได้)
 
 ---
-กำลังทำต่อเรื่อยๆ ถ้าใจร้อนไปดูวีดีโอคอร์สอื่นๆรอได้ที่ [Saladpuk.com](http://www.saladpuk.com)
+กำลังทำต่อเรื่อยๆ ถ้าใจร้อนไปดูวีดีโอคอร์สอื่นๆรอได้ที่ [Saladpuk.com](http://saladpuk.com)
+
+เจอตรงไหนผิดพลาด หรืออยากช่วยเขียน รบกวน fork + pull request เข้ามานะครับ
 
 # คำสั่ง Docker เบื้องต้น
 
