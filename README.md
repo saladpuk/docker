@@ -1,5 +1,5 @@
 # [Images](https://docs.docker.com/glossary/?term=image)
-Docker images are the basis of containers.
+An image is an executable package that includes everything needed to run an application--the code, a runtime, libraries, environment variables, and configuration files.
 
 **Pull an image**
 ```
@@ -26,9 +26,9 @@ docker run -p 80:80 --name <new_ps_name> <image_name>
 ```
 
 # [Containers](https://docs.docker.com/glossary/?term=container)
-A container is a runtime instance of a docker image.
+A container is a runtime instance of an image--what the image becomes in memory when executed.
 
-**List all container**
+**List containers**
 ```
 docker ps -a  
 ```
