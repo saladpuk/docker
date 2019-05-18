@@ -1,4 +1,6 @@
-# Images
+# [Images](https://docs.docker.com/glossary/?term=image)
+Docker images are the basis of containers.
+
 **Pull an image**
 ```
 docker pull <image_name>
@@ -23,14 +25,17 @@ docker run -p 80:80 <image_name>
 docker run -p 80:80 --name <new_ps_name> <image_name>
 ```
 
-# Containers
+# [Containers](https://docs.docker.com/glossary/?term=container)
+A container is a runtime instance of a docker image.
+
 **List all container**
 ```
 docker ps -a  
 ```
-**Stop a running container**
+**Start/Stop a running container**
 ```
 docker stop <container_name_or_id>
+docker start <container_name_or_id>
 ```
 ```
 docker stop $(docker ps -a -q)
@@ -43,10 +48,53 @@ docker rm <container_name_or_id>
 docker rm $(docker ps -a -q)
 ```
 
-# Dockerfile
+# System
+**Show docker disk usage**
+```
+docker system df
+```
+**Remove unused data**
+```
+docker system prune -a
+```
+
+# [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile)
+A Dockerfile is a text document that contains all the commands you would normally execute manually in order to build a Docker image.
+
 **Sample: php7 apache, map to port 80**
 ```
 FROM php:7.0-apache
 COPY src/ /var/www/html
 EXPOSE 80
+```
+> Dockerfile
+
+# [Docker compose](https://docs.docker.com/glossary/?term=Compose)
+Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.
+
+```
+version: '3.1'
+
+services:
+  <name>:
+    image: <image_name>
+    
+  database:
+    image: redis
+```
+> docker-compose.yml
+
+**Version**
+```
+docker-compose -v
+```
+**Validation**
+```
+docker-compose config
+```
+**Builds and attaches to container for service**
+```
+docker-compose -f stack.yml up
+docker-compose up -d
+docker-compose up -d --scale <name>=<number_of_instances>
 ```
