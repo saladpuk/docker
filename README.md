@@ -71,4 +71,4 @@ Hello docker world!14
 ## [คำสั่ง Docker เบื้องต้น](chapters/cheatsheet/readme.md)
 
 ---
-กำลังทำต่อเรื่อยๆ ถ้าใจร้อนก็ไปดูวีดีโอคอร์สอื่นๆรอได้ที่ [Saladpuk.com](http://www.saladpuk.com) แต่ถ้าใจดีจะช่วย Fork ไปทำ content ต่างๆแล้ว pull request เข้ามาด้วยจะเป็นพระคุณต่อเพื่อนๆมากครับ XD
+กำลังทำต่อเรื่อยๆ ถ้าใจร้อนก็ไปดูวีดีโอคอร์สอื่นๆรอได้ที่ [Saladpuk.com](http://saladpuk.com) แต่ถ้าใจดีจะช่วย Fork ไปทำ content ต่างๆแล้ว pull request เข้ามาด้วยจะเป็นพระคุณต่อเพื่อนๆมากครับ XD
